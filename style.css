@@ -1,0 +1,135 @@
+:root {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-size: 1.6rem;
+  background-color: #d8ddd8;
+  font-family: "Work Sans", sans-serif;
+}
+
+main {
+  width: 80%;
+  min-height: 100vh;
+  margin: 2rem auto;
+  background-color: white;
+}
+main header {
+  width: 100%;
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main header .leftHeader {
+  display: flex;
+  align-items: center;
+}
+main header .leftHeader img {
+  max-width: 3rem;
+  height: 3rem;
+  display: inline-block;
+  margin-right: 2rem;
+}
+main header .leftHeader h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+main header nav {
+  flex-shrink: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+main header nav a {
+  text-decoration: none;
+  margin-left: 2rem;
+  font-weight: bold;
+}
+main header nav a:hover {
+  color: grey;
+  text-decoration: underline;
+}
+
+.firstSection {
+  width: 60%;
+  margin: 5rem 0 5rem 10rem;
+}
+.firstSection h2 {
+  padding-bottom: 2rem;
+}
+.firstSection button {
+  float: right;
+  margin: 2rem 0;
+  padding: 0.5rem;
+  background-color: black;
+  color: white;
+}
+.firstSection button::after {
+  content: "\f0da";
+  font-family: "fontAwesome";
+}
+
+.secondSection {
+  width: 100%;
+  height: 50%;
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-rows: minmax(40rem, 1fr);
+  gap: 1rem;
+  color: white;
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+.secondSection .boxOne {
+  background-image: url(/images/white-box.jpg);
+  background-position: center;
+}
+.secondSection .boxTwo {
+  background-image: url(/images/room.jpg);
+  background-position: left;
+}
+.secondSection .boxThree {
+  background-image: url(/images/black-white.jpg);
+  background-position: left;
+  margin-right: 1rem;
+}
+.secondSection .boxOne, .secondSection .boxTwo, .secondSection .boxThree {
+  background-blend-mode: darken;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 7rem 5rem 3rem;
+}
+.secondSection .imagedivBox {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-image: radial-gradient(white 50%, rgba(104, 104, 104, 0.168627451) 40%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.secondSection .imagedivBox img {
+  width: 2rem;
+  height: 2rem;
+}
+
+footer {
+  width: 100%;
+  height: 5rem;
+  color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
